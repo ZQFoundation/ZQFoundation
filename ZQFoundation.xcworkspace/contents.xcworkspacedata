@@ -7,4 +7,7 @@
    <FileRef
       location = "group:ZQProject/ZQProject.xcodeproj">
    </FileRef>
+   <FileRef
+      location = "group:ZQFCore/ZQFCore.xcodeproj">
+   </FileRef>
 </Workspace>

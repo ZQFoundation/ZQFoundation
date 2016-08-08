@@ -15,3 +15,14 @@
 @implementation UIView (ZQFFrame)
 
 @end
+
+@implementation UIView (ZQFSnapshot)
+- (UIImage *)snapshot {
+    UIGraphicsBeginImageContext(self.bounds.size);
+    [self.layer renderInContext:UIGraphicsGetCurrentContext()];
+    UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return image;
+}
+
+@end

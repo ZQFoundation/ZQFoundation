@@ -15,3 +15,7 @@
 @interface UIView (ZQFFrame)
 
 @end
+
+@interface UIView (ZQFSnapshot)
+- (UIImage *)snapshot;
+@end
